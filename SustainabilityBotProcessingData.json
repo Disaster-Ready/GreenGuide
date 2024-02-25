@@ -131,7 +131,7 @@
     },
     {
       "name": "wastemanagement",
-      "patterns": ["waste", "recycle"", "reduction", "landfill", "disposal","reuse"],
+      "patterns": ["waste", "recycle", "reduction", "landfill", "disposal","reuse"],
       "responses": [
         {
           "category": "safetytips",
