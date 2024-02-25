@@ -126,9 +126,6 @@ class DisasterChatbot:
         foundInfoType = DisasterChatbot.matchDescriptions(descriptions,userMSG)
         if foundInfoType == "No Descriptions Found":
             foundInfoType = "generalinfo"
-
-        print(foundedIntent)
-        print(foundInfoType)
         
         for intent in intents:
             if intent["name"] == foundIntent:
