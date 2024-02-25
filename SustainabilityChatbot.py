@@ -83,9 +83,9 @@ class DisasterChatbot:
             if maxMatchCount == None or curCount > maxMatchCount:
                 maxMatchCount = curCount
                 if curType == "safety_tips_patterns":
-                    maxMatchPattern = "safety_tips"
+                    maxMatchPattern = "safetytips"
                 else:
-                    maxMatchPattern = "general_info"
+                    maxMatchPattern = "generalinfo"
 
         if maxMatchPattern == None:
             return "No Descriptions Found"
@@ -125,7 +125,7 @@ class DisasterChatbot:
 
         foundInfoType = DisasterChatbot.matchDescriptions(descriptions,userMSG)
         if foundInfoType == "No Descriptions Found":
-            foundInfoType = "general_info"
+            foundInfoType = "generalinfo"
 
         print(foundedIntent)
         print(foundInfoType)
